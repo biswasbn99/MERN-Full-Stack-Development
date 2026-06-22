@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-05</title>
+
+    
+    <style>
+
+        /* priority */
+        /*
+        Element>Class>id>Universal
+        inline>internal>External 
+        
+        */
+         /* Element Selector  */
+        h2{
+            color: blue;
+        }
+      /*  Class Selcetor for internal CSS */
+
+      .main{
+        font-size: 32px;
+      }
+
+      /* id Selector */
+      #headingFourTwo{
+        background-color: aqua;
+        font-size: 40px;
+      }
+
+      /* Universal Element */
+      *{
+        color:blue;
+        /* Removing space */
+        margin: 0;  
+        padding: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Inline CSS -->
+    <h1 style="color: brown;">Hello World</h1>
+
+    <!-- Internal CSS -->
+     <h2>Hello World</h2>
+
+     <!-- External CSS -->
+      <h3>Hello World</h3>
+
+      <!-- Class Seletor with external CSS  -->
+       <h4 class="title">Hello World</h4>
+
+       <!-- Class Selector With Inline,Internal & External CSS -->
+        <!-- use main class for internal CSS -->
+       <h4 class="title main" style="background-color: darkgreen;"  >Hello World</h4>
+
+       <!-- ID Selector  -->
+        <!-- Must be id should be unique for each tag -->
+       <h4 id="headingFourTwo" class="title">Hello World</h4>
+
+       <h4>Hello World</h4>
+
+
+
+       <!-- Descendant Selector -->
+
+       <form style="margin-top: 10px; font-size: 30px;">
+        <div>
+            Hello Bn!!!
+        </div>
+       </form>
+
+       <div style="margin-top: 20px; font-size: 30px;">
+        Welcome
+       </div>
+
+
+<!-- /* Colors */
+Color Name
+Hex
+RGB
+RGBA ,here A--- means opacity
+ -->
+       <!-- Box o1 -->
+        <div style="background-color: yellowgreen;height: 100px;width: 200px; margin-bottom: 20px;">
+
+        </div>
+
+       <!-- Box o2 -->
+        <div style="background-color:#AAAAAA;height: 100px;width: 200px; margin-bottom: 20px;">
+
+        </div>
+
+       <!-- Box o3 -->
+        <div style="background-color: rgb(29, 184, 155);height: 100px;width: 200px; margin-bottom: 20px;">
+
+        </div>
+
+       <!-- Box o4 -->
+        <div style="background-color:  rgba(29, 184, 155,.50);height: 100px;width: 200px;">
+
+        </div>
+
+        <!-- Color Picker Tools -->
+         <!-- Color picker extension -->
+          <!-- Color Zila extension-->
+
+
+          <!-- Color  Units-->
+           <!-- 
+            px--beginner used only
+            %-- generally Used
+            em
+            rem--generally Used(recommended)
+            vh--generally Used(recommended)--View Height
+            vm--generally Used(recommended)--View Width
+           -->
+
+
+           <!-- CSS Typography -->
+            <!-- 
+           Font Size
+           Font Weight
+           Font Family
+           Text Align
+           Text Decoration
+           Text Transform
+           Line Height
+           Letter Spacing
+            -->
+
+            <p class="heading1" style="margin-top: 30px;">Hello Bn's World</p>
+
+
+            <!-- Backgrounds -->
+             <!-- 
+            Background Color
+            Background Image
+            Background Size
+            Background Position
+            Background Repeat
+             -->
+
+             <div class="hero" style="margin-top: 30px;"></div>
+             <div class="hero2" style="margin-top: 30px;"></div>
+       
+</body>
+</html>
