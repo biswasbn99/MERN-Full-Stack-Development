@@ -1,0 +1,289 @@
+
+/* Box Model */
+.container1{
+    height: 100px;
+    width: 100px;
+    background-color:red;
+    border: solid 1px green;
+
+    /*3 property --> border: solid/dotted weight color */
+
+    padding: 20px;
+    /* padding from all side */
+    padding: 20px 80px;
+    /* padding with height-->20px & width-->80px */
+    padding: 20px 80px 30px 40px;
+    /* padding with top-->20px bottom-->50px left-->30px right-->20px */
+
+
+    margin: 30px; ;
+    /* margin from all side */
+    margin: 20px 80px;
+    /* margin with height-->20px & width-->80px */
+    margin: 50px 80px 30px 40px;
+    /* margin with top-->20px bottom-->50px left-->30px right-->20px */
+
+    overflow:hidden ;
+    /* overflow: scroll; */
+    /* overflow: visible; */
+
+}
+.container2{
+    max-height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    margin: 50px;
+}
+.container3{
+    min-height: 100px;
+    width: 100px;
+    background-color: yellow;
+    margin: 50px;
+}
+.container4{
+    min-height: 100px;
+    min-width: 300px;
+    width: 100px;
+    background-color: red;
+    margin: 50px;
+}
+
+.container5{
+    max-height: 100px;
+    max-width: 150px;
+    width: 100px;
+    background-color: blue;
+    margin: 50px;
+    overflow: scroll;
+}
+.container6{
+   
+    background-color: magenta;
+    margin: 50px;
+    /* border-radius: 20px; */
+    border-radius: 10%;
+    /* border-radius for circle shape-50% */
+    /* generally  used in project--> 5%, 10%, 15% */
+}
+.container6 p{
+    display: inline;
+}
+.container7{
+   
+    background-color: royalblue;
+    margin: 50px;
+   border-radius: 15%;
+}
+.container7 a,span{
+    display: block;
+}
+/* Display : none & visibility: hidden -->both are not same */
+/* Display:none-->don't keep any space */
+/* Visibility:hidden -->take space but nothing is visible*/
+
+.container8{
+   
+    background-color: grey;
+    margin: 50px;
+   border-radius: 15%;
+   visibility: hidden;
+}
+.container8 a,span{
+    display: block;
+}
+
+.container9{
+   
+    background-color: mediumvioletred;
+    margin: 50px;
+   border-radius: 15%;
+   
+}
+.container8 a,span{
+    display: block;
+}
+
+/* FlexBox */
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    display: inline-block;
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: goldenrod;
+    display: inline-block;
+
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    display: inline-block;
+
+
+}
+
+/* Used only flex */
+
+.container10{
+    display: flex;
+}
+.box4{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+   
+}
+.box5{
+    height: 100px;
+    width: 100px;
+    background-color: goldenrod;
+    
+
+}
+.box6{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+   
+
+}
+
+
+/* Used min-width & flex */
+.container11{
+    display: flex;
+}
+.box7{
+    height: 100px;
+    min-width: 100px;
+    background-color: aqua;
+   
+}
+.box8{
+    height: 100px;
+    min-width: 100px;
+    background-color: hotpink;
+    
+
+}
+.box9{
+    height: 100px;
+    min-width: 60px;
+    background-color: chocolate;
+   
+
+}
+
+/* Change Flex Direction with column */
+.container12{
+    display: flex;
+    flex-direction: column;
+    /*We can reverse--> flex-direction: column-reverse; */
+    /*We can use--> flex-direction: row; */
+    /*Both are used to controlling-->flex-direction: column;--> justify-content: start; align-items: start; */
+    justify-content: start;
+    /* justify-content-->works along column */
+     align-items: start;
+
+      /* align-items-->works with row */
+
+      /* justify-content & align-items both work opposite of each other*/
+}
+.box10{
+    min-height: 100px;
+    width: 100px;
+    background-color: aqua;
+   
+}
+.box11{
+    min-height: 100px;
+    width: 100px;
+    background-color: hotpink;
+    
+
+}
+.box12{
+     min-height: 100px;
+    width:100px;
+    background-color: chocolate;
+   
+
+}
+
+/* Change Flex Direction with Row*/
+.container13{
+    display: flex;
+    flex-direction: row;
+    /*We can use--> flex-direction: row; */
+    /*Both are used to controlling-->flex-direction: row;--> justify-content: center; */
+    justify-content: center; 
+    /* justify-items-->works along row */
+    /* we can use-->justify-content: end; */
+    align-items: end;
+    /* align-items-->works along column */
+    /* align-items: center; */
+    /* align-items: start; */
+    width: 100vw;
+    min-height: 100vh;
+    border: solid 1px;
+
+
+     /* justify-content & align-items both work opposite of each other*/
+     /* flex-direction-->If we don't specify anything, it defaults to row-->Just Write: display:flex; No need to specify flex-direction */
+}
+.box13{
+    min-height: 100px;
+    width: 100px;
+    background-color: aqua;
+   
+}
+.box14{
+    min-height: 100px;
+    width: 100px;
+    background-color: hotpink;
+    
+
+}
+.box15{
+     min-height: 100px;
+    width:100px;
+    background-color: chocolate;
+   
+
+}
+/* Uses of Gap & flex-wrap */
+/* Allows flex items to move onto the next line when there isn't enough space. */ 
+.container14{
+    display: flex;
+   justify-content: center;
+    align-items: start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100vw;
+    min-height: 100vh;
+    border: solid 1px;
+}
+.box16{
+    min-height: 100px;
+    width: 100px;
+    background-color: palegreen;
+   
+}
+.box17{
+    min-height: 100px;
+    width: 100px;
+    background-color: hotpink;
+    
+
+}
+.box18{
+     min-height: 100px;
+    width:100px;
+    background-color: khaki;
+   
+
+}
