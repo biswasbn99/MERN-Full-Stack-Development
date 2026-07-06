@@ -1,0 +1,83 @@
+.box1{
+    height: 100px;
+    width: 250px;
+    background-color:red;
+    /* position fixed used fixed any color */
+    position:fixed;
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color:blue;
+    /* When we use abosulate*/
+    /* Abosulate create a layer over the previous layer */
+    /* Here, Create a new layer for blue that exits on Red Layer */
+    position: absolute;
+    /* z-index is used for controlling the stacking order */
+    /* Generally, Z-index value range -50 to 50 preferred */
+    z-index: 1;
+    /* top and left are used for positioning the absolutely positioned element */
+    top: 50px;
+    left: 100px;
+}
+.box3{
+    height: 200px;
+    width: 200px;
+    background-color:blueviolet;
+    /* here, bluviolet create a new layer over the previous layer */
+    position: absolute;
+    z-index: 0;
+    /* we used any value top/left, top/right, bottom/left, bottom/right etc */
+    left: 30px;
+    top:100px;
+}
+.box4{
+    height:100px;
+    width:100px;
+    background-color:green;
+    /* relative used when we used multiple layers   */
+    position:relative;
+    top:200px;
+    /* overflow:hidden is used to hide any content that exceeds the boundaries of the element */
+    overflow:hidden;
+}
+.box5{
+    height:50px;
+    width:50px;
+    background-color:yellow;
+    position:absolute;
+    bottom:55px;
+}
+.box6{
+    height: 100px;
+    width: 100px;
+    background-color:magenta;
+}
+.box7{
+    height: 100px;
+    width: 300px;
+    background-color:lightsalmon;
+    /* sticky position  used when any lower element is scrolled past it */
+    /* For sticky position must use top, right, bottom, or left */
+    position:sticky;
+    top:0px;
+}
+.box8{
+    height: 100px;
+    width: 100px;
+    background-color:mediumspringgreen;
+
+}
+/* hover effect */
+.box9{
+    height: 500px;
+    width: 500px;
+    background-color:orange;
+}
+.box9:hover{
+     height: 400px;
+    width: 400px;
+    background-color:royalblue;
+    /* transition property -->duration & animation type */
+    transition: 0.5s ease;
+}
