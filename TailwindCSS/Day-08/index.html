@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-08</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <!-- Every Represent Same Size -->
+    <p class="text-[32px]">Hello World</p>
+     <!-- font-size -->
+      <!-- 
+        text-xs
+        text-sm 
+        text-base
+        text-lg
+        text-xl
+        text-2xl
+        text-3xl
+        text-4xl
+        ........
+        ......
+      -->
+
+      <!-- text-red-500--Normal Shade -->
+    <h1 class="text-xl text-red-500 bg-yellow-300">Hello World</h1>
+    <!-- We can custom color- but must it will be Hex code -->
+    <h2 class="text-[#454B1B]">Hi BN</h2>
+    
+    <!-- border-2--border weight -->
+     <!-- padding pt, pb, pl, pr-->
+      <!-- Padding p--all side padding , px--x axis padding py--y axis padding -->
+    <div class="border-2 min-h-20 w-20 pb-4 pt-4 pl-4 pr-6" >
+        <p>Hello World</p>
+    </div>
+
+    <div class="border-2 h-20 w-20 m-5 ml-0 mr-0 mt-10 mb-0 mx-0 my-10 px-4 py-4 ">
+        <p>Hi BN Biswas</p>
+    </div>
+
+    <!-- flex -->
+    <div class="flex justify-between align-center items-center">
+        <div class="bg-red-500 h-10 w-10"></div>
+        <div class="bg-blue-500 h-20 w-20"></div>
+        <div class="bg-green-500 h-20 w-20"></div>
+        <div></div>
+    </div>
+
+    <!-- Grid -->
+     <div class="mt-20 grid grid-cols-2 gap-5 ">
+        <div class="bg-green-500 h-30 w-30"></div>
+        <div class="bg-violet-600 h-20 w-20 absolute"></div>
+        <div class="bg-teal-500 h-30 w-30"></div>
+        <div></div>
+     </div>
+
+     <!-- Transition -->
+      <div class="group">
+        <div class="bg-blue-500 h-22 w-22 "></div>
+        <div class="bg-red-500 h-20 w-20 -mt-20 mb-5
+         group-hover:translate-40 transition-all duratio-900 delay-800
+        "></div>
+      </div>
+
+      <!-- Another example of Transition -->
+       <div class="group">
+        <div class="bg-lime-500 h-22 w-22 "></div>
+        <div class="bg-pink-500 h-20 w-20 -mt-20
+        group-hover:translate-45 group-hover:bg-amber-500 transition-all duration-900 delay-500
+        mb-5"></div>
+       </div>
+
+       <!-- Rotate & Animate -->
+        <div>
+          <div class="bg-rose-500/50 h-20 w-20"></div>
+          <div class="bg-rose-500 h-20 w-20 -mt-20 rotate-x-45 rotate-z-45 animate-spin mb-4"></div>
+        </div>
+
+        <div>
+          <div class="bg-lime-500 h-20 w-20 animate-ping mb-20"></div>
+
+          <div class="bg-blue-500 h-20 w-20 animate-bounce mb-20"></div>
+          <div class="bg-yellow-500 h-20 w-20 animate-pulse mb-20"></div>
+        </div>
+
+</body>
+</html>
