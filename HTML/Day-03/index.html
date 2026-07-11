@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- Unorder List --disc,square,circle -->
+    <h3>Unorder List:---</h3>
+    <ul type="disc">
+        <h3>Unorder List:--</h3>
+        <li>Unorder list Item 1</li>
+        <li>Unorder list Item 2</li>
+        <li>Unorder list Item 3</li>
+    </ul>
+
+
+    <!-- Order List --1,A,a,I,i -->
+     <h3>Order List:--</h3>
+     <ol type="a" start="3">
+        <h3>Order List:--</h3>
+        <li>Order List Item 1</li>
+        <li>Order List Item 2</li>
+        <li>Order List Item 3</li>
+     </ol>
+      <ol type="i" start="5">
+        <li>Order List Item 4</li>
+        <li>Order List Item 5</li>
+        <li>Order List Item 6</li>
+      </ol>
+
+      <!-- Nested Lists -->
+       <h3>Nested List (Unorder to order)</h3>
+       <ul type="square">
+        <li> Unorder List Item-1</li>
+        <li> Unorder List Item-2
+
+            <ol>
+                <li>Order List-1</li>
+                <li>Order List-2</li>
+                <li>Order List-3</li>
+            </ol>
+        </li>
+
+        <li> Unorder List Item-3</li>
+       </ul>
+
+      <h3>Nested List Order to Unorder</h3>
+      <ol type="A">
+        <li>Order List-1</li>
+        <li>Order List-2</li>
+        <li>Order List-3
+            <ul>
+                <li>Unorder List-4</li>
+                <li>Unorder List-5</li>
+                <li>Unorder List-6</li>
+            </ul>
+        </li>
+
+      </ol>
+
+
+      <!-- Table -->
+      <!-- table Tag for creates table -->
+      <!-- tr Tag for Table Row -->
+      <!-- th Tag for Table Header -->
+      <!-- td Tag for Table Data -->
+       <h3>Students Table</h3>
+       <table border="1" style="margin-bottom: 50px;">
+        <tr>
+            <td>Name</td>
+            <td>ID</td>
+            <td>Phone Number</td>
+        </tr>
+        <tr>
+            <td>Milton</td>
+            <td>22307060</td>
+            <td>01765-155235</td>
+        </tr>
+         <tr>
+            <td>Rakib</td>
+            <td>22393049</td>
+            <td>01765-155235</td>
+        </tr>
+         <tr>
+            <td>Robin</td>
+            <td>22803036</td>
+            <td>01765-155235</td>
+        </tr>
+         <tr>
+            <td>Abir</td>
+            <td>22307036</td>
+            <td>01864-567235</td>
+        </tr>
+          <tr>
+            <td>nobin</td>
+            <td>22309870</td>
+            <td>01864-567235</td>
+        </tr>
+       </table>
+       <!-- Rowspan & Colspan -->
+          <h3>Students Table With Rowspan & Colspan</h3>
+       <table border="1" style="margin-bottom: 20px;">
+        <tr>
+            <td>Name</td>
+            <td>ID</td>
+            <td>Phone Number</td>
+        </tr>
+        <tr>
+            <td>Milton</td>
+            <td colspan="2">22307060</td>
+            
+        </tr>
+         <tr>
+            <td>Rakib</td>
+            <td>22393049</td>
+            <td>01765-155235</td>
+        </tr>
+         <tr>
+            <td>Robin</td>
+            <td>22803036</td>
+            <td rowspan="2">01765-155235</td>
+        </tr>
+         <tr>
+            <td>Abir</td>
+            <td>22307036</td>
+          
+        </tr>
+          <tr>
+            <td>nobin</td>
+            <td>22309870</td>
+            <td>01864-567235</td>
+        </tr>
+       </table>
+
+       <!-- Form commonly used for Text, Email,password,number,Date-->
+        <!-- We used different types of button Radio Button,Checkbox,Select Dropdown,Text Area-->
+        <h3>Registration Form</h3>
+        <form autocomplete="on"padding: 5px;>
+            <div style="margin-bottom: 5px;"><label>Full Name: </label>
+            <input type="text" name="fullname" placeholder="Enter Your Name">
+           </div>
+
+            <!-- Email -->
+             <div style="margin-bottom: 5px;"><label>Email: </label>
+             <input type="email" name="email" placeholder="Enter Your name">
+             </div>
+
+             <!-- Passsword -->
+             <div style="margin-bottom: 5px;"> <label>Password:</label>
+              <input type="password" name="password" placeholder="Enter your  Password:" minlength="8">
+                </div>
+
+              <!-- Number -->
+               <div style="margin-bottom: 5px;">
+                <label>Number:</label>
+               <input type="number" name="number" placeholder="Enter Your Number" >
+               </div>
+
+               <!-- Date -->
+                <div style="margin-bottom: 5px;">
+                    <label>Date:</label>
+                <input type="date" name="dob" placeholder="Enter Your DOB">
+                </div>
+
+                <!-- Radio Button -->
+                 <div style="margin-bottom: 5px;">
+                    <label>Gender:</label>
+                 <input type="radio" name="gender" value="male">Male
+                 <input type="radio" name="gender" value="female">Female
+                 </div>
+
+                 <!-- Dropdown -->
+                  <div style="margin-bottom: 5px;">
+                    <label>Country:</label>
+                  <select name="country">
+                    <option value="bd">Bangladesh</option>
+                    <option value="IN" >India</option>
+                    <option value="usa" selected>USA</option>
+                    <option value="uk">UK</option>
+                  </select>
+                  </div>
+                
+
+
+                  <!-- Text Area -->
+                   <div style="margin-bottom: 5px;">
+                    <label>About MySelf:</label>
+                   <textarea name="about" rows="4" cols=""></textarea>
+                   </div>
+
+                   <!-- File Upload -->
+                    <div style=" margin-bottom: 5px;">
+                        <label>Upload Photo:</label>
+                    <input type="file" name="photo">
+                    </div>
+
+                    <!-- Color Picke -->
+                     <div style="margin-bottom: 5 px;">
+                        <label>Favorite Color</label>
+                     <input type="color" name="color">
+                     </div>
+
+                     <!--Submit and Reset Buttons  -->
+                     <div style="margin-bottom: 5px;">
+                        <input type="submit" value="submit">
+                        <br><br>
+                     <input type="reset" value="reset">
+                     <br><br>
+                     <button> Login</button>
+                     <br><br>
+                     </div>
+            </form>
+
+</body>
+</html>
